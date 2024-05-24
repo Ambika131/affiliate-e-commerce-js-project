@@ -1,0 +1,201 @@
+/* Media query for tablets and mobile devices */
+/* header-section css style start */
+@media (max-width: 992px) {
+  .brand-title {
+    display: none;
+    margin-left: auto;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    align-items: center;
+  }
+  .navbar-links li {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+  .navbar-links a {
+    display: block;
+    color: #d53369;
+    width: 100%;
+  }
+  .toggle-button {
+    display: flex; /* Show only on small screens */
+    flex-direction: column;
+    position: absolute;
+    right: 2rem;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}
+/* header-section css style end*/
+
+/* hero-section start */
+@media (max-width: 768px) {
+  .hero-section {
+    width: 100%;
+  }
+
+  .hero-content,
+  .hero-image {
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .hero-content p {
+    font-size: 0.4rem;
+    margin-bottom: 10px;
+  }
+  .hero-content {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* hero-section end */
+/* /*PRODUCTS   /** */
+@media (max-width:1300px) {
+  .product-item {
+    width: 100%;
+    height: auto;
+    align-items: center;
+ }
+}
+/* services-section start */
+@media (max-width: 913px) {
+  .services-container {
+    display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+@media (max-width: 768px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .service-box h3 {
+    font-size: 18px;
+  }
+
+  .service-box p {
+    font-size: 16px;
+  }
+}
+@media (max-width:468px) {
+  .services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-box h3 {
+    font-size: 16px;
+  }
+
+  .service-box p {
+    font-size: 12px;
+  }
+}
+/* services-section end */
+
+/* Features section starts  */
+/**************************************/
+/*****   05. Features area css    *****/
+/**************************************/
+@media (max-width: 768px) {
+    .col-lg-3, .col-md-6 {
+        flex: 1 1 45%; /* 2 column on tablet */
+    }
+   
+    
+  .features {
+    
+    padding: 50px 0;
+    background: #ecf4f4;
+  }
+
+  .features-image {
+    width: 350px;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .features-image img {
+    width: 350px;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+ 
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+}
+@media (max-width: 576px) {
+   
+  .features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+    .feature-single h3 {
+        display: block;
+        font-size: 20px;
+    }
+
+    .feature-single h4 {
+        display: block;
+        font-size: 16px;
+    }
+
+    .feature-single p {
+        display: block;
+        font-size: 14px;
+    }
+}
+
+/* 
+Features section end */
+
+/* related section start */
+@media (max-width:768px){
+  .feature-container{
+    display: flex;
+    flex-direction: column;
+
+    
+  }
+    
+}
